@@ -203,12 +203,32 @@ a {
         max-width: 960px;
     }
 }
+.header-f {
+    height: 116px;
+}
 
 header {
-    background-color: #f9f9f9;
+    background-color: rgba(249,249,249, 0.3);
     padding: 15px 0;
-    position: relative;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 116px;
     z-index: 10;
+    transition: all 0.3s;
+
+    &.sticky {
+        background-color: rgba(249,249,249, 1);
+        height: 90px;
+
+        .logo {
+            img {
+                max-width: 65%;
+            }
+        }
+    }
+
     .logo {
         width: 140px;
         display: inline-block;
@@ -221,6 +241,9 @@ header {
         //         max-width: 85%;
         //     }
         // }
+        img {
+            transition: max-width 0.3s;
+        }
     }
     nav {
         margin-left: -8px;
@@ -677,6 +700,9 @@ section {
     padding: 30px 0;
     .item-car {
         margin: 25px 0;
+        .btn {
+            width: 100%;
+        }
         .img {
             background-position: center;
             background-size: cover;
@@ -1403,6 +1429,9 @@ p.sub-header {
             color: $text-black-color;
             font-size: 42px;
             padding: 5px 0;
+            &__out {
+                text-decoration: underline;
+            }
             &.active {
                 text-decoration: underline;
                 color: $main-red-color;
@@ -2081,6 +2110,10 @@ p.sub-header {
         height: 144px;
         transition: top 0.2s ease-in-out;
         width: 100%;
+        &.sticky {
+            background-color: #c62827;
+
+        }
         &.nav-up {
             top: -144px;
         }
@@ -2901,6 +2934,51 @@ button.swiper-pagination-bullet {
     }
 }
 
+.popup-area {
+    position: fixed;
+    height: 4px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-link__out {
+    text-decoration: underline;
+
+    span,
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    img {
+        margin-left: 10px;
+    }
+
+    span {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #eaeaea;
+        }
+    }
+
+    &:hover {
+        span {
+            &:before {
+                background-color: #c62827;
+            }
+        }
+    }
+}
+
 @media (max-width: 767.98px) {
     .carousel-teams {
         margin: 0 50px;
@@ -3143,6 +3221,9 @@ button.swiper-pagination-bullet {
     }
     header {
         height: 76px;
+        &.sticky {
+            height: 76px;
+        }
         &.nav-up {
             top: -76px;
         }
@@ -3871,3 +3952,10 @@ button.swiper-pagination-bullet {
 }
 
 
+@media screen and (max-width: 767px) {
+    .why,
+    .process,
+    .teams {
+        display: none;  
+    }
+}

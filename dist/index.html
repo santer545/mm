@@ -25,17 +25,17 @@
         </div>
         <div class="text-center">
             <nav class="nav">
-                <a class="nav-link active" href="#">Каталог</a>
-                <a class="nav-link" href="#">Преимущества</a>
-                <a class="nav-link" href="#">Автомобили</a>
-                <a class="nav-link" href="#">Условия пригона</a>
-                <a class="nav-link" href="#">Отзывы</a>
-                <a class="nav-link" href="#">Контакты</a>
-                <div class="go-to-catalog"><a href="#">Перейти на наш сайт-каталог</a></div>
+                <a class="nav-link active" href="#avto">Авто в Украине</a>
+                <a class="nav-link" href="#" target="_blank"><span>Авто в пути</span><img src="icons/menu-icon.png" alt=""></a>
+                <a class="nav-link" href="#offer">Авто под заказ</a>
+                <a class="nav-link" href="#why">Реальные отзывы</a>
+                <a class="nav-link" href="#footer">Адрес офиса</a>
+                
             </nav>
         </div>
     </div>
-    <header>
+    <header id="header">
+        <div class="popup-area"></div>
         <section class="wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -44,12 +44,11 @@
                         <a href="#" class="logo d-none d-lg-block"><img src="img/logo.png" class="img-fluid"/></a>
                         <a href="#" class="logo d-block d-lg-none"><img src="img/logo-m.png" class="img-fluid"/></a>
                         <nav class="nav">
-                            <a class="nav-link active" href="#">Каталог</a>
-                            <a class="nav-link" href="#">Преимущества</a>
-                            <a class="nav-link" href="#">Автомобили</a>
-                            <a class="nav-link" href="#">Условия пригона</a>
-                            <a class="nav-link" href="#">Отзывы</a>
-                            <a class="nav-link" href="#">Контакты</a>
+                            <a class="nav-link active" href="#avto">Авто в Украине</a>
+                            <a class="nav-link nav-link__out" href="#" target="_blank"><span>Авто в пути</span><img src="icons/menu-icon.png" alt=""></a>
+                            <a class="nav-link" href="#offer">Авто под заказ</a>
+                            <a class="nav-link" href="#why">Реальные отзывы</a>
+                            <a class="nav-link" href="#footer">Адрес офиса</a>
                         </nav>
                         <div class="call-phones text-right">
                             <span class="city"><a href="#">Запорожье</a></span>
@@ -61,13 +60,15 @@
             </div>
         </section>
     </header>
+    <div class="header-f"></div>
     <section class="wrapper">
         <section class="full-page d-flex">
             <div class="container-fluid d-flex">
                 <div class="row d-flex align-items-center">
                     <div class="col-12 col-lg-6 col-xl-5 order-2 order-lg-1">
-                        <h1>Заказывайте авто под ключ с гарантией доставки до Одессы. Дешевле на 30-50% в сравнении с покупкой в Украине.</h1>
-                        <p class="header">Выбранный вами амтомобиль проходит 12 этапов проверки нашими экспертами в США перед погрузкой на пором.</p>
+                        <h1>Покупай авто из США дешевле на 30% рынка</h1>
+                        <p class="header">Перед оплатой автомобиль проходит 5 этапов проверки. Гарантия доставки.
+</p>
                         <div class="btn-calc d-xl-flex align-items-center">
                             <button class="btn btn-red" data-toggle="modal" data-target="#createdModal">Рассчитать стоимость пригона</button>
                             <p>312 человек уже пригнали свою машину мечты</p>
@@ -143,19 +144,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <img src="img/main-car.png" class="img-fluid float-right" /> -->
-                            <!-- <p class="text-right">2016 - 2017</p>
-                            <h2 class="text-right">Ford Fusion</h2> -->
-                            <!-- <div class="compare-price">
-                                <div class="d-flex align-items-center margin-b">
-                                    <div class="price text-right big">13 430$</div>
-                                    <div class="text padding-left-none">Вложения на покупку авто под ключ в Master Motors</div>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="price text-right small">18 240$</div>
-                                    <div class="text padding-left-none">Стоимость покупки в Украине</div>
-                                </div>
-                            </div> -->
+                            
                         </div>
                     </div>
                 </div>
@@ -168,7 +157,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="count-people">
-                            <h2>487</h2>
+                            <h2>1000+</h2>
                             <h3>человек</h3>
                             <p>Уже стали обладателями автомобиля
                                 <br> своей мечты</p>
@@ -191,11 +180,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -225,11 +210,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -259,11 +240,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -293,11 +270,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -327,11 +300,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -361,11 +330,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -395,11 +360,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -429,11 +390,7 @@
                                                             <div class="avatar-info">
                                                                 <h5>Иван Иванов</h5>
                                                                 <span>PR менеджер</span>
-                                                                <ul class="social">
-                                                                    <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                                                    <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                                                </ul>
+                                                                
                                                             </div>
                                                         </div>
                                                         <p>«Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину. Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.»</p>
@@ -469,7 +426,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="avto">
             <div class="container-fluid">
                 <div class="cars-in-transit">
                     <div class="section-heading text-center">Авто в наличии</div>
@@ -484,7 +441,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -495,7 +452,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -507,7 +464,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -518,7 +475,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -533,7 +490,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -544,7 +501,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -556,7 +513,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -567,7 +524,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -582,7 +539,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -593,7 +550,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -605,7 +562,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -616,7 +573,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -631,7 +588,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -642,7 +599,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -654,7 +611,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -665,7 +622,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -680,7 +637,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -691,7 +648,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -703,7 +660,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -714,7 +671,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -729,7 +686,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -740,7 +697,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -752,7 +709,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -763,7 +720,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -778,7 +735,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -789,7 +746,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -801,7 +758,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -812,7 +769,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -827,7 +784,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -838,7 +795,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -849,7 +806,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -860,7 +817,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -871,7 +828,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -882,7 +839,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                     </div>
@@ -904,7 +861,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -915,7 +872,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -927,7 +884,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -938,7 +895,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -953,7 +910,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -964,7 +921,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -976,7 +933,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -987,7 +944,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1002,7 +959,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1013,7 +970,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1025,7 +982,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1036,7 +993,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1051,7 +1008,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1062,7 +1019,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1074,7 +1031,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1085,7 +1042,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1100,7 +1057,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1111,7 +1068,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1123,7 +1080,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1134,7 +1091,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1149,7 +1106,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1160,7 +1117,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1172,7 +1129,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1183,7 +1140,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1198,7 +1155,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1209,7 +1166,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1221,7 +1178,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1232,7 +1189,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1247,7 +1204,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1258,7 +1215,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1269,7 +1226,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1280,7 +1237,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1291,7 +1248,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1302,14 +1259,14 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="offer">
             <div class="container-fluid">
                 <div class="cars-in-transit">
                     <div class="section-heading text-center">Авто под заказ</div>
@@ -1324,7 +1281,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1335,7 +1292,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1347,7 +1304,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1358,7 +1315,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1373,7 +1330,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1384,7 +1341,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1396,7 +1353,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1407,7 +1364,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1422,7 +1379,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1433,7 +1390,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1445,7 +1402,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1456,7 +1413,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1471,7 +1428,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1482,7 +1439,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1494,7 +1451,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1505,7 +1462,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1520,7 +1477,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1531,7 +1488,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1543,7 +1500,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1554,7 +1511,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1569,7 +1526,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1580,7 +1537,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1592,7 +1549,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1603,7 +1560,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1618,7 +1575,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1629,7 +1586,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -1641,7 +1598,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                                 <div class="col col-6">
@@ -1652,7 +1609,7 @@
                                         <div class="img" style="background-image: url(img/taz.jpg)">
                                             <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                         </div>
-                                        <button class="btn btn-gray">Получить фото</button>
+                                        <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                                     </div>
                                 </div>
                             </div>
@@ -1667,7 +1624,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1678,7 +1635,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1689,7 +1646,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1700,7 +1657,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1711,7 +1668,7 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                         <div class="item">
@@ -1722,14 +1679,14 @@
                                 <div class="img" style="background-image: url(img/taz.jpg)">
                                     <div class="price">Цена с растоможкой <b>14 700$</b></div>
                                 </div>
-                                <button class="btn btn-gray">Получить фото</button>
+                                <button class="btn btn-gray" data-toggle="modal" data-target="#createdModal-1">фото и история авто</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="why" id="why">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-8">
@@ -1740,38 +1697,38 @@
                                     <div class="col-4 col-lg-6">
                                         <div class="item-with-h3">
                                             <h3>дешевле на 30-50%</h3>
-                                            <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                            <p>Битые машины легко поддаются восстановлению, а цена ремонта в Украине ниже, чем в США.</p>
                                         </div>
                                     </div>
                                     <div class="col-4 col-lg-6">
                                         <div class="item-with-h3">
-                                            <h3>зачем переплачивать?</h3>
-                                            <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                            <h3>безопасно</h3>
+                                            <p>Мы гарантируем пригон только хороших вариантов, репутация превыше всего.</p>
                                         </div>
                                     </div>
                                     <div class="col-4 col-lg-6">
                                         <div class="item-with-h3">
-                                            <h3>маленький пробег</h3>
-                                            <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                            <h3>Легко</h3>
+                                            <p>Расскажем о всех нюансах и подводных камнях, сопроводим сделку под ключ.</p>
                                         </div>
                                     </div>
                                     <div class="w-100 d-block d-lg-none"></div>
                                     <div class="col-4 col-lg-6">
                                         <div class="item-with-h3">
-                                            <h3>новые модели от 2010</h3>
-                                            <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                            <h3>БОЛЬШОЙ ВЫБОР</h3>
+                                            <p>Вы можете купить у нас авто в наличии в Киеве или Харькове, авто в пути или выбрать под заказ.</p>
                                         </div>
                                     </div>
                                     <div class="col-4 col-lg-6">
                                         <div class="item-with-h3">
-                                            <h3>очень просто</h3>
-                                            <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                            <h3>ОТЛИЧНЫЕ КОМПЛЕКТАЦИИ</h3>
+                                            <p>Каждое средство имеет отличную комплектацию и находится в хорошем состоянии, мы берем авто только с незначительными повреждениями для быстрого ремонта</p>
                                         </div>
                                     </div>
                                     <div class="col-4 col-lg-6">
                                         <div class="item-with-h3">
-                                            <h3>качество авто</h3>
-                                            <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                            <h3>МАЛЕНЬКИЙ ПРОБЕГ</h3>
+                                            <p>Все автомобили, которые мы будем вам предлагать это 2014-2018 года с небольшими пробегами по дорогам США</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1781,7 +1738,7 @@
                                     <p>Подберите свое авто и получите <b>бесплатный расчет</b> пригона из США под ключ</p>
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <button class="btn btn-red" data-toggle="modal" data-target="#createdModal-2">Бесплатный расчёт</button>
+                                    <button class="btn btn-red" data-toggle="modal" data-target="#createdModal">Бесплатный расчёт</button>
                                 </div>
                             </div>
                         </div>
@@ -1796,11 +1753,7 @@
                                     <div class="avatar-info">
                                         <h5>Иван Иванов</h5>
                                         <span>PR менеджер</span>
-                                        <ul class="social">
-                                            <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                            <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                            <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                                 <p>"Вероятно, к концу года будет отменён закон, позволяющий выгодно доставлять авто из США в Украину. Успейте заказать авто, учитывая срок его доставки 2-3 месяца"</p>
@@ -1813,11 +1766,7 @@
                                     <div class="avatar-info">
                                         <h5>Иван Иванов</h5>
                                         <span>PR менеджер</span>
-                                        <ul class="social">
-                                            <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                            <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                            <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                                 <p>"Вероятно, к концу года будет отменён закон, позволяющий выгодно доставлять авто из США в Украину. Успейте заказать авто, учитывая срок его доставки 2-3 месяца"</p>
@@ -1830,11 +1779,7 @@
                                     <div class="avatar-info">
                                         <h5>Иван Иванов</h5>
                                         <span>PR менеджер</span>
-                                        <ul class="social">
-                                            <li><a href="#"><img src="icons/telegramm.png" alt=""></a></li>
-                                            <li><a href=""><img src="icons/insta.png" alt=""></a></li>
-                                            <li><a href=""><img src="icons/facebook.png" alt=""></a></li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                                 <p>"Вероятно, к концу года будет отменён закон, позволяющий выгодно доставлять авто из США в Украину. Успейте заказать авто, учитывая срок его доставки 2-3 месяца"</p>
@@ -1873,32 +1818,32 @@
                                     <div class="row clearfix">
                                         <div class="col col-4">
                                             <div class="item-with-h4">
-                                                <h4>Скрытие платежей</h4>
-                                                <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                                <h4>Скрытые платежи</h4>
+                                                <p>Многие умалчивают про разные дополнительные платежи (сбор за интернет-ставки, комиссия по SWIFT, верные таможенные пошлины, простой в порту, эвакуатор, сертификация).</p>
                                             </div>
                                         </div>
                                         <div class="col col-4">
                                             <div class="item-with-h4">
-                                                <h4>Риски с запчастями</h4>
-                                                <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                                <h4>Машина кукла (кот в мешке)</h4>
+                                                <p>Основным недостатком покупки автомобиля в США является то, что вы не можете осмотреть машину в живую и можно нарваться на так называемые «куклы».</p>
                                             </div>
                                         </div>
                                         <div class="col col-4">
                                             <div class="item-with-h4">
-                                                <h4>Логистика</h4>
-                                                <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                                <h4>Компании однодневки</h4>
+                                                <p>Сумма за услуги уплачена, деньги переведены на счет фирмы однодневки. Как только набирается несколько клиентов в течении пары месяцев пока машина якобы плывет, компания пропадает.</p>
                                             </div>
                                         </div>
                                         <div class="col col-4">
                                             <div class="item-with-h4">
-                                                <h4>Ложные ожидания</h4>
-                                                <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                                <h4>Ложные ожидания по срокам</h4>
+                                                <p>Реальные сроки доставки по Америке, морем до Одессы и в итоге дата получения в вашем городе занижаются и умалчиваются. Рекомендуем брать авто, которые уже в пути.</p>
                                             </div>
                                         </div>
                                         <div class="col col-4">
                                             <div class="item-with-h4">
-                                                <h4>Компании-однодневки</h4>
-                                                <p>Вероятно, к концу года будет отменен закон, позволяющий выгодно доставлять авто из США в Украину.</p>
+                                                <h4>Неправильно предварительно просчитанный ремонт</h4>
+                                                <p>Стандартная ситуация, когда по фотографиям неправильно оценен ремонт, формируются ложные ожидания у клиентов. Рекомендуем заказать инспекцию на площадку до отправки.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1920,7 +1865,7 @@
         </section>
         <img src="img/half-car.png" class="half-car" />
     </section>
-    <section>
+    <section class="process">
         <section class="wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -1934,7 +1879,7 @@
                                             <div class="item active">
                                                 <div class="text">
                                                     <h5><i>1 / </i>Подбор авто</h5>
-                                                    <p>Подбираем 50 самых оптимальных вариантов. Бесплатно.</p>
+                                                    <p>Подбираем 100+ самых оптимальных вариантов. Бесплатно. Пока не найдем достойный вариант.</p>
                                                 </div>
                                                 <i class="pl"></i>
                                             </div>
@@ -1948,6 +1893,7 @@
                                                         <li>- Проверка истории авто с помощью платных сервисов Сarfax, Аvtochek, Еpicvin, Сlearvin;</li>
                                                         <li>- Проверяем продавалась ли машина раннее;</li>
                                                         <li>- Проверяем машину, запрашивая данные от страховой компании или от дилеров перекупов.</li>
+                                                        <li>- Проверяем на ЕВРО-5, ЕВРО-6</li>
                                                     </ul>
                                                     <p>Без тщательной работы на данном этапе к вам приедет “кукла” — это авто, которое пострадало в серьезном ДТП и повторно выставлено на продажу. В то же время, на картинке кажется, что у авто визуально некритические повреждения.</p>
                                                     <p class="rd">Самый важный этап всего процесса!</p>
@@ -2015,7 +1961,7 @@
                                 <p>Оставьте свой номер и мы бесплатно подберем
                                     <br/><b>20 оптимальных вариантов покупки авто</b>
                                     <br/> с подробным расчетом</p>
-                                <button class="btn btn-red flex-btn">Подобрать авто</button>
+                                <button class="btn btn-red flex-btn" data-toggle="modal" data-target="#createdModal-3">Подобрать авто</button>
                             </div>
                         </div>
                     </div>
@@ -2179,10 +2125,10 @@
                             <div id="accordion" class="accordion-faq">
                                 <div class="item-faq">
                                     <p class="question" data-toggle="collapse" data-target="#faq-1" aria-controls="faq-1" aria-expanded="true">
-                                        Можно я не поеду на растоможку?
+                                        Откуда такие низкие цены на авто в США?
                                     </p>
                                     <div id="faq-1" class="collapse answer show" data-parent="#accordion">
-                                        <div class="card-body">Никаких проблем. Машина в любом случае будет растаможена на твое имя. Присутствовать при этом нудном и утомительном занятии необязательно.</div>
+                                        <div class="card-body">В Америке все автомоболи страхуются в обязательном порядке, после ДТП владельцу проще получить выплату за авто. Стоимость ремонта (стоимость расчитывается по часам работы от 60-100$ / час) в США дорогая, поэтому страховые выставляют автомобили на аукционы и продает по остаточной стоимости.</div>
                                     </div>
                                 </div>
                                 <div class="item-faq">
@@ -2190,33 +2136,18 @@
                                         Что будет, если автомобиль получит повреждения при транспортировке?
                                     </p>
                                     <div id="faq-2" class="collapse answer" data-parent="#accordion">
-                                        <div class="card-body">Никаких проблем. Машина в любом случае будет растаможена на твое имя. Присутствовать при этом нудном и утомительном занятии необязательно.</div>
+                                        <div class="card-body">Авто можно застраховать перед отправкой, кроме того мы пользуемся услугами проверенных экспедиторов, которые присутствуют при погрузке и разгрузке, и гарантируют сохранность от повреждений и обворовывания. В пути автомобиль страхуется линией, которая осуществляет доставку. Можно дополнительно застраховать от любых рисков от незначительных повреждений до полного уничтожения.</div>
                                     </div>
                                 </div>
                                 <div class="item-faq">
                                     <p class="question" data-toggle="collapse" data-target="#faq-3" aria-controls="faq-3">
-                                        Что-то все сильно хорошо. А вы точно меня не кинете?
+                                        Какие вы даёте гарантии
                                     </p>
                                     <div id="faq-3" class="collapse answer" data-parent="#accordion">
-                                        <div class="card-body">Никаких проблем. Машина в любом случае будет растаможена на твое имя. Присутствовать при этом нудном и утомительном занятии необязательно.</div>
+                                        <div class="card-body">Первое, что нужно знать и помнить — все авто с аукциона в США вы покупаете без гарантии, на условиях «как есть», поэтому нужно быть очень внимательным при выборе, а лучше доверить это профессионалам. Решение о покупке принимается на основании фото и описании лота, ещё возможна проверка истории авто по системам Carfax и AutoCheck, что в среднем в интернете стоит около 30$ (для наших клиентов мы это делаем бесплатно). Дополнительно некоторые автоаукционы предлагают услугу вызова профессионального эксперта, который составит детальный отчёт о техническом состоянии автомобиля. Как правило, такая опция в среднем стоит 150$. На основании вышеперечисленных данных и принимается окончательное решение об участии в торгах</div>
                                     </div>
                                 </div>
-                                <div class="item-faq">
-                                    <p class="question" data-toggle="collapse" data-target="#faq-4" aria-controls="faq-4">
-                                        Почему стоимость автомобиля получается такой низкой, даже с учетом доставки в порт Одессы?
-                                    </p>
-                                    <div id="faq-4" class="collapse answer" data-parent="#accordion">
-                                        <div class="card-body">Никаких проблем. Машина в любом случае будет растаможена на твое имя. Присутствовать при этом нудном и утомительном занятии необязательно.</div>
-                                    </div>
-                                </div>
-                                <div class="item-faq">
-                                    <p class="question" data-toggle="collapse" data-target="#faq-5" aria-controls="faq-5">
-                                        Можно ли укомплектовать выбранный автомобиль дополнительными запчастями и аксессуарами?
-                                    </p>
-                                    <div id="faq-5" class="collapse answer" data-parent="#accordion">
-                                        <div class="card-body">Никаких проблем. Машина в любом случае будет растаможена на твое имя. Присутствовать при этом нудном и утомительном занятии необязательно.</div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -2233,7 +2164,7 @@
                                         <input type="tel" class="form-control" placeholder="Номер телефона" />
                                     </div>
                                     <div class="text-center">
-                                        <button class="btn btn-red">Подобрать авто</button>
+                                        <button class="btn btn-red" data-toggle="modal" data-target="#createdModal-3">Подобрать авто</button>
                                     </div>
                                 </form>
                             </div>
@@ -2243,7 +2174,7 @@
             </div>
         </section>
     </section>
-    <footer>
+    <footer id="footer">
         <section class="wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -2258,7 +2189,7 @@
                             оформления любой техники на заказ из Америки. Мы покупаем и доставляем из США автомобили, мотоциклы,
                             квадроциклы, катера, лодки, вертолёты на заказ с аукционов США. Контейнерная перевозка любых сборных грузов из США.
                         </small>
-                            <div class="go-to-catalog"><a href="#">Перейти на наш сайт-каталог</a></div>
+                            
                             <span class="copyright">&copy; 2016 - 2018 All Rights Reserved. MASTERMOTORS Авто из США</span>
                         </div>
                     </div>
@@ -2284,7 +2215,26 @@
                             <input type="tel" class="form-control" placeholder="Номер телефона" />
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-red">Подобрать авто</button>
+                            <button class="btn btn-red" data-toggle="modal" data-target="#createdModal-3">Подобрать авто</button>
+                        </div>
+                    </form>
+                    <small class="text-center">Дополнительно дадим советы как не допустить ошибок, покупая авто из США</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="createdModal-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>Получите фотографии авто</h4>
+                    <p>Оставьте номер телефона и мы отправим фотографии данного авто и другие подробности в месседжер Viber, Telegram или Whats App.</p>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Номер телефона" />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-red" data-toggle="modal" data-target="#createdModal-3">Подобрать авто</button>
                         </div>
                     </form>
                     <small class="text-center">Дополнительно дадим советы как не допустить ошибок, покупая авто из США</small>
@@ -2309,10 +2259,29 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-red">Подобрать авто</button>
+                            <button class="btn btn-red" data-toggle="modal" data-target="#createdModal-3">Подобрать авто</button>
                         </div>
                     </form>
                     <small class="text-center"><b class="rd">8 из 10</b> новичков допускают эти ошибки</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="createdModal-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h4>Подберем 20 авто на основе ваших пожеланий</h4>
+                    <p>Оставьте контакт и менеджер свяжеться с вами <b class="rd">в течение 15 минут</b></p>
+                    <form action="">
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Номер телефона" />
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-red" data-toggle="modal" data-target="#createdModal-3">Подобрать авто</button>
+                        </div>
+                    </form>
+                    <small class="text-center">Дополнительно дадим советы как не допустить ошибок, покупая авто из США</small>
                 </div>
             </div>
         </div>

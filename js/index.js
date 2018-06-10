@@ -1,8 +1,10 @@
 $(() => {
     this.fullPage()
     this.initSomeHeight()
+    this.animateAnchor()
     this.initCarousel()
     this.swiper()
+    this.popupOut()
     this.initCarouselTransit()
     this.initCarouselTeams()
     if (viewport().width >= 992) {
@@ -63,14 +65,20 @@ function initCarousel() {
     })
 
     $('.cars-carousel').owlCarousel({
-        loop: false,
+        loop: true,
         margin: 0,
-        nav: true,
+        nav: false,
         items: 1,
+        autoplay: true,
+        autoplayTimeout: 4000,
         mouseDrag: false,
         dots: false
     })
 }
+
+window.onscroll = function() {
+    header()
+};
 
 function initCarouselTransit() {
     let owl = $('.carousel-transit')
@@ -79,6 +87,7 @@ function initCarouselTransit() {
         margin: 30,
         nav: true,
         items: 2,
+        dotsEach: true,
         mouseDrag: false
     })
 
@@ -87,9 +96,23 @@ function initCarouselTransit() {
         loop: false,
         margin: 30,
         nav: true,
+        dotsEach: true,
         items: 1,
         mouseDrag: false
     })
+}
+
+
+
+function header() {
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    if (window.pageYOffset != 0) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
 }
 
 function initCarouselTeams() {
@@ -256,7 +279,7 @@ function swiper() {
     var w = $('.swiper-scrollbar-drag').width();
     var wEl = $('.number-slides').width();
     var tStart = $('.swiper-scrollbar-drag').position()
-    
+
 
     var startPosition = tStart.left + (w / 2) - wEl + 45;
     $('.number-slides').css({
@@ -276,7 +299,7 @@ function swiper() {
         var t = $('.swiper-scrollbar-drag').position();
         console.log(t.left);
         console.log(w);
-        var numberPosition = t.left + (w / 2) + 45 -wEl;
+        var numberPosition = t.left + (w / 2) + 45 - wEl;
         $('.number-slides').css({
             '-webkit-transform': 'translate3d(' + numberPosition + 'px, -5px, 0)',
             '-moz-transform': 'translate3d(' + numberPosition + 'px, -5px, 0)',
@@ -295,4 +318,49 @@ function swiper() {
     // });
 
     $('.js-all').text(swiper.slides.length);
+}
+
+
+function animateAnchor() {
+    // Select all links with hashes
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+
+                        };
+                    });
+                }
+            }
+        });
+}
+
+function popupOut() {
+    $('.popup-area').hover(function() {
+        $('#createdModal-2').modal('show');
+    })
 }
