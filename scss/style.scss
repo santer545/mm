@@ -3002,6 +3002,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 767.98px) {
+    .modal-body {
+        text-align: center;
+    }
     .carousel-teams {
         margin: 0 50px;
     }
