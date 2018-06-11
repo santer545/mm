@@ -208,7 +208,7 @@ a {
 }
 
 header {
-    background-color: rgba(249,249,249, 0.3);
+    background-color: rgba(249,249,249, 0);
     padding: 15px 0;
     position: fixed;
     left: 0;
@@ -406,6 +406,9 @@ header {
             top: 50%;
             transform: translate(0, -50%);
             right: -45px;
+            @media screen and (min-width: 1650px) {
+                right: -39%;
+            }
 
             .owl-nav .owl-next {
                 background: url('../icons/main-arrow-right.png') no-repeat center!important;
@@ -497,6 +500,10 @@ header {
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
+
+            @media screen and (min-width: 1650px) {
+                right: -70%;
+            }
         }
     }
 }
